@@ -1,5 +1,6 @@
-<script>
-	import '../app.css';
-</script>
-
-<slot></slot>
+<script lang="ts">
+	import { ModeWatcher } from "mode-watcher";
+   </script>
+	
+   <ModeWatcher />
+   <slot />
