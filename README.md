@@ -10,12 +10,14 @@ clone this repo and run `npm install` to install the dependencies.
 # to install the dependencies.
 npm install
 
+# create a self-signed SSL certificate for the https dev server, it's easy, google it!
+# place the .pem files in the folder ABOVE root (default setting) or configure in vite.config.ts
 
-## Developing
-create a .env file in the root and add the following:
+# create a .env file in the root and add the following:
 BUNGIE_API_KEY=""
 BUNGIE_CLIENT_ID=""
 BUNGIE_CLIENT_SECRET=""
+## Developing
 # start the server and open the app in a new browser tab
 npm run dev -- --open
 ```
