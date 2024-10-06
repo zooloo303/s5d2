@@ -43,5 +43,9 @@ export const POST: RequestHandler = async ({ fetch, cookies }) => {
 		maxAge: tokenData.refresh_expires_in
 	});
 
-	return json({ success: true });
+	return json({
+		success: true,
+		expires_in: tokenData.expires_in,
+		access_token: tokenData.access_token
+	});
 };
